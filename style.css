@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    list-style: none;
-    background-color: rgb(245, 248, 255);
+    /* list-style: none; */
+    /* background-color: rgb(245, 248, 255); */
 }
 
 /*.................header style..............*/
@@ -23,10 +24,12 @@
 .menu nav ul {
     display: flex;
     gap: 40px;
+       list-style: none;
 }
 
 .menu nav ul li a {
     color: #8987A1;
+ 
 }
 
 .menu .h a {
@@ -46,7 +49,7 @@
 /*...............banner style.............*/
 
 .banner {
-    max-width: 1220px;
+    max-width:1220px;
     margin: 10px 40px;
 }
 
@@ -85,6 +88,101 @@
     color: #E95A08;
 }
 
+/*.............card style.............*/
+
+.main{
+    max-width:1220px;
+    margin: 10px 40px;
+    margin-top: 100px;
+}
+.our{
+    text-align: center;
+    font-size: 27px;
+    margin: 0 auto;
+    /* width: 60%; */
+}
+.our{
+    color: rgba(0, 0, 0, 0.5);
+}
+.o{
+    color: #E95A08;
+}
+.card{
+    max-width:1220px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.card-box{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 400px;
+    text-align: center;
+}
+.card-box img{
+    width: 100%;
+    height: 240px;
+}
+.card-box p{
+    font-family:Inter ;
+    font-size: 22px;
+}
+.card-box h3{
+    font-family: Inter;
+    color:rgb(0, 0, 0);
+    margin: 10px;
+}
+.card-box .btn{
+    border: none;
+    font-size: 10px;
+    color: white;
+    padding:10px 70px;
+    background-color: #E95A08;
+}
+
+/*..........plants style..............*/
+
+.plants{
+    max-width: 1220px;
+    display: flex;
+    margin: 100px 40px;
+    gap: 40px;
+}
+
+.plants-left{
+    position: relative;
+}
+.plants-left .bg{
+    width: 400px;
+}
+.plants-left img .bg{
+    width: 400px;
+    height:50%;
+}
+.badge{
+    position: absolute;
+    top: -100px;
+    right: -68px;
+    width: 220px;
+    height: 220px;
+    z-index: 2;
+
+}
+.plants-right h1{
+    font-size: 40px;
+}
+.list{
+margin: 40px;
+}
+.list p{
+    font-size: 19px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+}
+
+
 
 
 
@@ -122,5 +220,15 @@
     .banner-seo {
         flex-direction: column-reverse;
         gap: 10px;
+    }
+
+    .card{
+        grid-template-columns: repeat(2,1fr); 
+        width: 100%;
+        margin: 0;
+    }
+    .card-box .btn{
+         font-size:10px;
+         padding: 10px 30px;
     }
 }
