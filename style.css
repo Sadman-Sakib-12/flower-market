@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    /* width: 100%; */
     /* list-style: none; */
     /* background-color: rgb(245, 248, 255); */
 }
@@ -15,11 +16,11 @@
 }
 
 .menu {
-    max-width: 1220px;
+    max-width: 1024px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 10px 40px;
+    margin: 15px;
 }
 
 .menu nav ul {
@@ -50,8 +51,8 @@
 /*...............banner style.............*/
 
 .banner {
-    max-width: 1220px;
-    margin: 10px 40px;
+    max-width: 1024px;
+  margin:15px;
 }
 
 .banner-seo {
@@ -92,8 +93,8 @@
 /*.............card style.............*/
 
 .main {
-    max-width: 1220px;
-    margin: 10px 40px;
+    max-width: 1024px;
+   margin:15px;
     margin-top: 100px;
 }
 
@@ -113,7 +114,7 @@
 }
 
 .card {
-    max-width: 1220px;
+    max-width: 1024px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 12px;
@@ -154,9 +155,9 @@
 /*..........plants style..............*/
 
 .plants {
-    max-width: 1220px;
+    max-width: 1024px;
     display: flex;
-    margin: 100px 40px;
+ margin:15px;
     gap: 40px;
 }
 
@@ -181,6 +182,7 @@
     height: 250px;
     z-index: 2;
 }
+
 .plants-right h1 {
     font-size: 50px;
 }
@@ -231,7 +233,7 @@
 }
 
 .latest {
-    max-width: 1220px;
+    max-width: 1024px;
     display: flex;
     height: 400px;
     gap: 20px;
@@ -244,33 +246,42 @@
 
 /*.................Join styel...............*/
 
-.join{
+.join-midle {
+    max-width: 1024px;
     background-image: url(./assets/news-letter-bg.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 380px;
+   background-repeat: no-repeat;
+   background-size: contain;
+   margin-top: 80px;
+   height: 400px;
+   padding: 100px 200px;
 }
 
-.join-midle{
-    display: flex;
-    align-items: center;
-    padding: 150px;
-}
-.join .btn{
+.join-midle .btn {
     border: none;
     font-size: 10px;
+    margin-left: -4px;
     color: white;
-    padding: 10px 70px;
+    padding: 12px 22px;
     background-color: #E95A08;
-  
+
 }
 
-.join input{
+.join-midle h1 {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    text-align: center;
+}
+
+.join input {
     border: none;
     font-size: 10px;
     color: white;
-    padding: 10px 180px
-    
+    padding: 12px 330px
+}
+
+.join .in {
+    padding-left: 10px;
 }
 
 
@@ -283,8 +294,7 @@
 
 
 
-
-@media (max-width:768px) {
+@media (max-width:756px) {
     .menu-right nav {
         display: none;
     }
@@ -317,23 +327,50 @@
 
     .card-box .btn {
         font-size: 10px;
-        padding: 1px 30px;
+        padding: 10px 30px;
     }
 
- .plants {
-    max-width: 1220px;
-    flex-direction: column;   
-     margin:10px;
-    gap: 40px;
-}
-    .plants-left .bg{
+    .plants {
+        max-width: 1220px;
+        flex-direction: column;
+        /* margin: 10px; */
+        gap: 40px;
+    }
+
+    .plants-left .bg {
         width: 100%;
 
     }
+
     .plants-right h1 {
-    font-size: 30px;
-}
-    .badge{
+        font-size: 30px;
+    }
+
+    .badge {
         display: none;
     }
+
+.join-midle {
+    padding: 30px;
+    padding-left: 50px;
+    text-align: center;
+}
+
+.join .btn {
+    margin: -4px;
+    padding: 12px 20px;
+
+}
+
+.join-midle h1 {
+    font-size: 18px;
+    padding: 10px;
+}
+
+.join input {
+    border: none;
+    font-size: 10px;
+    color: white;
+    padding: 12px 20px
+}
 }
